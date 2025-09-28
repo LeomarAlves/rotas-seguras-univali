@@ -92,13 +92,13 @@ body {
 .map-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    color: #f06c40;
-    border-color: #f06c40;
+    color: #f27d52;
+    border-color: #f27d52;
 }
 .map-card h3 {
     font-size: 1.5em;
     margin: 10px 0;
-    color: #f06c40;
+    color: #f27d52;
 }
 .map-card p {
     font-size: 1em;
@@ -160,5 +160,127 @@ body {
         grid-template-columns: repeat(3, 1fr);
 
         justify-content: center;
+    }
+}
+/* --- Estilo Específico da Página Tutorial --- */
+.tutorial-section {
+    padding: 40px 0;
+    background-color: #f4f4f9; /* Fundo claro para o conteúdo */
+}
+
+.tutorial-section h2 {
+    color: #f27d52; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.intro-text {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Layout dos Passos */
+.step-guide {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 coluna no celular */
+    gap: 30px;
+}
+
+.step-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.step-item h4 {
+    color: #447e66; /* Verde Escuro */
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Estilo do Botão de Acesso ao Editor */
+.edit-button {
+    display: block;
+    background-color: #f27d52; /* Laranja/Coral */
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+    background-color: #d15631; /* Laranja mais escuro no hover */
+}
+
+/* Estilo da Tabela de Cores (as bolinhas) */
+.color-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #333;
+    vertical-align: middle;
+}
+
+/* Estilo para o Bloco de Código de Exemplo */
+.code-block {
+    background-color: #eeeeee;
+    padding: 15px;
+    border-left: 4px solid #97cba1; /* Borda Verde Água */
+    white-space: pre-wrap; /* Garante que o texto quebre linhas */
+    margin-top: 10px;
+    font-family: monospace;
+}
+
+/* Botão de Voltar para a Home */
+.back-button {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.back-button:hover {
+    text-decoration: underline;
+}
+
+/* --- MEDIA QUERY (Para telas maiores) --- */
+@media (min-width: 768px) {
+    .step-guide {
+        /* 2 colunas em telas maiores */
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+.campus-links {
+    display: flex;
+    flex-direction: column; /* Padrão: empilha verticalmente no celular */
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Estilo do Botão do Campus (herda o estilo do .edit-button) */
+.campus-button {
+    margin: 0; /* Remove a margem superior/inferior que o .edit-button tinha por ser um bloco único */
+    padding: 10px;
+    font-size: 0.95em;
+    font-weight: 700;
+}
+
+/* Para desktop e tablet, alinha os botões horizontalmente */
+@media (min-width: 768px) {
+    .campus-links {
+        justify-content: space-between;
+        /* Garante que os 3 botões ocupem o espaço de forma igual */
+        flex: 1; 
     }
 }
