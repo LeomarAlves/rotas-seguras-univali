@@ -143,6 +143,11 @@ body {
     font-size: 0.85em;
 }
 @media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 1.6em; /* Reduz o tamanho do título para caber em telas estreitas */
+        word-break: break-word; /* Garante que palavras longas sejam quebradas, se necessário */
+        padding: 0 10px; /* Adiciona um pequeno espaçamento interno, só por garantia */
+    }
     .card-grid {
         grid-template-columns: 1fr;
     }
@@ -238,8 +243,6 @@ body {
     padding: 15px;
     border-left: 4px solid #97cba1; /* Borda Verde Água */
     white-space: pre-wrap; /* Garante que o texto quebre linhas */
-    word-break: break-all; /* Força a quebra de palavras longas */
-    overflow-x: auto;
     margin-top: 10px;
     font-family: monospace;
 }
