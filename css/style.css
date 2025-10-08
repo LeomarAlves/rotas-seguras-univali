@@ -28,7 +28,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--cor-clara); /* Usando Bege */
     color: var(--cor-texto-principal);
-overflow-x: hidden;
 }
 
 .container {
@@ -326,8 +325,7 @@ overflow-x: hidden;
     /* Borda Verde Água */
     margin-top: 10px;
     font-family: monospace;
-    overflow-x: auto;
-    word-break: break-word;
+    white-space: pre-wrap;
 }
 
 /* ==================================== */
