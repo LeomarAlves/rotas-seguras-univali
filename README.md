@@ -5,7 +5,7 @@ Este projeto foi desenvolvido como parte de uma iniciativa de extensão universi
 A dificuldade de acesso seguro ao campus da Univali por ciclistas e pedestres impacta a mobilidade urbana e a segurança da comunidade acadêmica.
 
 🗺️ A Solução
-Desenvolvemos um mapeamento colaborativo para identificar as rotas mais seguras e eficientes, fornecendo dados para que ciclistas (incluindo a comunidade de fixed-gear) e pedestres possam se deslocar com maior tranquilidade.
+Desenvolvemos um mapeamento colaborativo para identificar as rotas mais seguras e eficientes, fornecendo dados para que ciclistas e pedestres possam se deslocar com maior tranquilidade.
 
 🛠️ O que foi feito:
 Coleta de Dados: Identificação de pontos críticos de tráfego e infraestrutura cicloviária.
